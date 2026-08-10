@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+  <formatVersion>7</formatVersion>
+
+  <view name="system,basic,detailed,index,grid">
+    <image
+      name="bs.halftone"
+      extra="true"
+      zIndex="2880"
+      path="./../../parts/halftone.png"
+      tile="true"
+      pos="0 0"
+      origin="0 0"
+      size="1 1"
+      linearSmooth="false"
+      color="${c.ink}"
+      opacity="${o.halftone}"
+    >
+      <visible ifSubset="screenart:off">false</visible>
+    </image>
+
+    <image
+      name="bs.grille"
+      extra="true"
+      zIndex="2900"
+      path="./../../parts/aperture.png"
+      tile="true"
+      pos="0 0"
+      origin="0 0"
+      size="1 1"
+      linearSmooth="false"
+      opacity="0.055"
+      visible="false"
+    >
+      <visible ifSubset="grade:crt">true</visible>
+      <visible ifSubset="grade:lines">true</visible>
+    </image>
+
+    <image
+      name="bs.lines"
+      extra="true"
+      zIndex="2920"
+      path="./../../parts/scan3.png"
+      tile="true"
+      pos="0 0"
+      origin="0 0"
+      size="1 1"
+      linearSmooth="false"
+      opacity="0.45"
+      visible="false"
+    >
+      <visible ifSubset="grade:lines">true</visible>
+    </image>
+
+    <image
+      name="bs.staticGrain"
+      extra="true"
+      zIndex="2940"
+      path="./../../parts/grain.png"
+      tile="true"
+      pos="0 0"
+      origin="0 0"
+      size="1 1"
+      linearSmooth="false"
+      opacity="0.35"
+      visible="false"
+    >
+      <visible ifSubset="grade:lines">true</visible>
+    </image>
+
+    <image
+      name="bs.vignette"
+      extra="true"
+      zIndex="2960"
+      path="./../../parts/vignette.png"
+      pos="0 0"
+      origin="0 0"
+      size="1 1"
+      linearSmooth="true"
+      opacity="0.55"
+      visible="false"
+    >
+      <visible ifSubset="grade:lines">true</visible>
+    </image>
+
+    <image
+      name="bs.crt"
+      extra="true"
+      zIndex="3000"
+      path="./../../parts/clear.png"
+      pos="0 0"
+      origin="0 0"
+      size="1 1"
+      linearSmooth="false"
+      opacity="1"
+      visible="false"
+    >
+      <visible ifSubset="grade:crt">true</visible>
+      <visible ifSubset="grade:vhs">true</visible>
+      <visible ifSubset="grade:press">true</visible>
+      <visible ifSubset="grade:grain">true</visible>
+
+      <shader ifSubset="grade:crt">./../../shaders/crt.glsl</shader>
+      <shader ifSubset="grade:vhs">./../../shaders/vhs.glsl</shader>
+      <shader ifSubset="grade:press">./../../shaders/press.glsl</shader>
+      <shader ifSubset="grade:grain">./../../shaders/grain.glsl</shader>
+    </image>
+  </view>
+</theme>

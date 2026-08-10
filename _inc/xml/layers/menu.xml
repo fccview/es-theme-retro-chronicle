@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+  <formatVersion>7</formatVersion>
+
+  <view name="menu">
+    <menuBackground name="menubg">
+      <color>${c.paper}</color>
+      <scrollbarAlignment>right</scrollbarAlignment>
+      <scrollbarColor>${c.accent}</scrollbarColor>
+      <scrollbarSize>0.004</scrollbarSize>
+    </menuBackground>
+
+    <menuText name="menutitle">
+      <fontPath>./../../fonts/${f.head}</fontPath>
+      <fontSize>0.046</fontSize>
+      <color>${c.ink}</color>
+    </menuText>
+
+    <menuText name="menutext">
+      <fontPath>./../../fonts/${f.sansMed}</fontPath>
+      <fontSize>0.030</fontSize>
+      <color>${c.ink}</color>
+      <selectedColor>${c.onAccent}</selectedColor>
+      <selectorColor>${c.accent}</selectorColor>
+      <selectorColorEnd>${c.accent}</selectorColorEnd>
+      <separatorColor>${c.faint}</separatorColor>
+    </menuText>
+
+    <menuTextSmall name="menutextsmall">
+      <fontPath>./../../fonts/${f.mono}</fontPath>
+      <fontSize>0.024</fontSize>
+      <color>${c.muted}</color>
+    </menuTextSmall>
+
+    <menuText name="menufooter">
+      <fontPath>./../../fonts/${f.mono}</fontPath>
+      <fontSize>0.021</fontSize>
+      <color>${c.muted}</color>
+    </menuText>
+
+    <menuGroup name="menugroup">
+      <fontPath>./../../fonts/${f.monoSemi}</fontPath>
+      <color>${c.muted}</color>
+      <separatorColor>${c.faint}</separatorColor>
+      <backgroundColor>00000000</backgroundColor>
+    </menuGroup>
+  </view>
+</theme>

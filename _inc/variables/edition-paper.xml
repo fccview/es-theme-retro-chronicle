@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+  <formatVersion>7</formatVersion>
+
+  <variables>
+    <c.paper>F2EFE9</c.paper>
+    <c.ink>17140F</c.ink>
+    <c.rule>17140F</c.rule>
+    <c.muted>736C62</c.muted>
+    <c.faint>CFC9BE</c.faint>
+    <c.reverse>F2EFE9</c.reverse>
+    <c.accent>17140F</c.accent>
+    <c.onAccent>F2EFE9</c.onAccent>
+    <c.plate>17140F</c.plate>
+    <c.ctrlActive>FFFFFF</c.ctrlActive>
+
+    <o.fibre>0.55</o.fibre>
+    <o.halftone>0.30</o.halftone>
+    <o.logo>1</o.logo>
+  </variables>
+</theme>

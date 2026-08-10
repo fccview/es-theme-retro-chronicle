@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme defaultView="detailed">
+  <formatVersion>7</formatVersion>
+
+  <include>./_inc/variables/lang-default.xml</include>
+  <include>./_inc/variables/lang-${lang}.xml</include>
+
+  <variables>
+    <v.hair>1 / ${screen.height}</v.hair>
+    <v.rule>2 / ${screen.height}</v.rule>
+    <v.heavy>5 / ${screen.height}</v.heavy>
+    <v.hairV>1 / ${screen.width}</v.hairV>
+    <v.ruleV>2 / ${screen.width}</v.ruleV>
+  </variables>
+
+  <include>./_inc/xml/geometry/base.xml</include>
+  <include if="${screen.width} &lt; ${screen.height}*1.70">./_inc/xml/geometry/wide.xml</include>
+  <include if="${screen.width} &lt; ${screen.height}*1.45">./_inc/xml/geometry/classic.xml</include>
+  <include if="${screen.width} &lt; ${screen.height}*1.20">./_inc/xml/geometry/square.xml</include>
+  <include if="${screen.width} &gt; ${screen.height}*2.00">./_inc/xml/geometry/ultra.xml</include>
+  <include
+    if="${screen.width} &gt; ${screen.height}*2.90"
+  >./_inc/xml/geometry/superultra.xml</include>
+
+  <subset name="edition" displayName="${sub.edition}">
+    <include
+      name="paper"
+      displayName="${sub.edition.paper}"
+    >./_inc/variables/edition-paper.xml</include>
+    <include name="ink" displayName="${sub.edition.ink}">./_inc/variables/edition-ink.xml</include>
+  </subset>
+
+  <subset name="accent" displayName="${sub.accent}">
+    <include name="mono" displayName="${sub.accent.mono}" />
+    <include
+      name="vermillion"
+      displayName="${sub.accent.vermillion}"
+    >./_inc/variables/accent-vermillion.xml</include>
+    <include
+      name="cobalt"
+      displayName="${sub.accent.cobalt}"
+    >./_inc/variables/accent-cobalt.xml</include>
+    <include
+      name="amber"
+      displayName="${sub.accent.amber}"
+    >./_inc/variables/accent-amber.xml</include>
+    <include
+      name="signal"
+      displayName="${sub.accent.signal}"
+    >./_inc/variables/accent-signal.xml</include>
+    <include
+      name="magenta"
+      displayName="${sub.accent.magenta}"
+    >./_inc/variables/accent-magenta.xml</include>
+  </subset>
+
+  <subset name="typescale" displayName="${sub.typescale}">
+    <include
+      name="medium"
+      displayName="${sub.typescale.medium}"
+    >./_inc/variables/type-medium.xml</include>
+    <include
+      name="small"
+      displayName="${sub.typescale.small}"
+    >./_inc/variables/type-small.xml</include>
+    <include
+      name="large"
+      displayName="${sub.typescale.large}"
+    >./_inc/variables/type-large.xml</include>
+  </subset>
+
+  <subset name="grade" displayName="${sub.grade}">
+    <include name="crt" displayName="${sub.grade.crt}" />
+    <include name="vhs" displayName="${sub.grade.vhs}" />
+    <include name="press" displayName="${sub.grade.press}" />
+    <include name="grain" displayName="${sub.grade.grain}" />
+    <include name="lines" displayName="${sub.grade.lines}" />
+    <include name="off" displayName="${sub.grade.off}" />
+  </subset>
+
+  <subset name="logostyle" displayName="${sub.logostyle}">
+    <include name="mono" displayName="${sub.logostyle.mono}" />
+    <include name="colour" displayName="${sub.logostyle.colour}" />
+  </subset>
+
+  <subset name="hardware" displayName="${sub.hardware}">
+    <include name="on" displayName="${sub.hardware.on}" />
+    <include name="off" displayName="${sub.hardware.off}" />
+  </subset>
+
+  <subset name="screenart" displayName="${sub.screenart}">
+    <include name="off" displayName="${sub.screenart.off}" />
+    <include name="on" displayName="${sub.screenart.on}" />
+  </subset>
+
+  <subset name="preview" displayName="${sub.preview}" appliesTo="basic,detailed,index,grid">
+    <include name="video" displayName="${sub.preview.video}" />
+    <include name="image" displayName="${sub.preview.image}" />
+    <include name="off" displayName="${sub.preview.off}" />
+  </subset>
+
+  <subset name="music" displayName="${sub.music}">
+    <include name="on" displayName="${sub.music.on}">./_inc/xml/audio/music-on.xml</include>
+    <include name="off" displayName="${sub.music.off}" />
+  </subset>
+
+  <subset name="sfx" displayName="${sub.sfx}">
+    <include name="on" displayName="${sub.sfx.on}">./_inc/xml/audio/sfx-on.xml</include>
+    <include name="off" displayName="${sub.sfx.off}" />
+  </subset>
+
+  <view name="basic,detailed" />
+  <customView name="index" />
+  <view name="grid" />
+
+  <include>./_inc/variables/fonts.xml</include>
+
+  <include>./_inc/xml/layers/paper.xml</include>
+  <include>./_inc/xml/layers/chrome.xml</include>
+  <include>./_inc/xml/layers/menu.xml</include>
+
+  <include>./_inc/xml/views/system.xml</include>
+  <include>./_inc/xml/views/gamelist.xml</include>
+  <include>./_inc/xml/views/detailed.xml</include>
+  <include>./_inc/xml/views/basic.xml</include>
+  <include>./_inc/xml/views/index.xml</include>
+  <include>./_inc/xml/views/grid.xml</include>
+
+  <include>./_inc/xml/layers/overlay.xml</include>
+</theme>

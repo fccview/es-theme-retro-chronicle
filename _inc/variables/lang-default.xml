@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+  <formatVersion>7</formatVersion>
+
+  <variables>
+    <sub.edition>Edition</sub.edition>
+    <sub.edition.paper>Paper (light)</sub.edition.paper>
+    <sub.edition.ink>Ink (dark)</sub.edition.ink>
+
+    <sub.accent>Accent colour</sub.accent>
+    <sub.accent.mono>Monochrome</sub.accent.mono>
+    <sub.accent.vermillion>Vermillion</sub.accent.vermillion>
+    <sub.accent.cobalt>Cobalt</sub.accent.cobalt>
+    <sub.accent.amber>Amber</sub.accent.amber>
+    <sub.accent.signal>Signal green</sub.accent.signal>
+    <sub.accent.magenta>Magenta</sub.accent.magenta>
+
+    <sub.typescale>Type scale</sub.typescale>
+    <sub.typescale.small>Small</sub.typescale.small>
+    <sub.typescale.medium>Medium</sub.typescale.medium>
+    <sub.typescale.large>Large</sub.typescale.large>
+
+    <sub.grade>Screen grade</sub.grade>
+    <sub.grade.crt>Cathode tube (animated)</sub.grade.crt>
+    <sub.grade.vhs>Worn VHS tape (animated)</sub.grade.vhs>
+    <sub.grade.press>Newsprint press (animated)</sub.grade.press>
+    <sub.grade.grain>Paper grain (static)</sub.grade.grain>
+    <sub.grade.lines>Scanlines (static)</sub.grade.lines>
+    <sub.grade.off>Off</sub.grade.off>
+
+    <sub.logostyle>System logos</sub.logostyle>
+    <sub.logostyle.mono>Monochrome</sub.logostyle.mono>
+    <sub.logostyle.colour>Colour</sub.logostyle.colour>
+
+    <sub.hardware>Hardware plate</sub.hardware>
+    <sub.hardware.on>Show</sub.hardware.on>
+    <sub.hardware.off>Hide</sub.hardware.off>
+
+    <sub.screenart>Halftone screen</sub.screenart>
+    <sub.screenart.on>On</sub.screenart.on>
+    <sub.screenart.off>Off</sub.screenart.off>
+
+    <sub.music>Background music</sub.music>
+    <sub.music.on>On</sub.music.on>
+    <sub.music.off>Off</sub.music.off>
+
+    <sub.sfx>Navigation sounds</sub.sfx>
+    <sub.sfx.on>On</sub.sfx.on>
+    <sub.sfx.off>Off</sub.sfx.off>
+
+    <sub.preview>Game preview</sub.preview>
+    <sub.preview.video>Video</sub.preview.video>
+    <sub.preview.image>Image only</sub.preview.image>
+    <sub.preview.off>Off</sub.preview.off>
+
+    <l.masthead>RETRO CHRONICLE</l.masthead>
+    <l.lateEdition>LATE EDITION</l.lateEdition>
+    <l.sectionSystems>THE SYSTEMS SECTION</l.sectionSystems>
+    <l.firstPublished>First published</l.firstPublished>
+    <l.sysCode>CODE</l.sysCode>
+    <l.pageOne>PAGE ONE</l.pageOne>
+    <l.index>INDEX</l.index>
+    <l.titles>TITLES</l.titles>
+    <l.played>PLAYED</l.played>
+    <l.favourites>FAVOURITES</l.favourites>
+    <l.manufacturer>MANUFACTURER</l.manufacturer>
+    <l.released>RELEASED</l.released>
+    <l.genre>GENRE</l.genre>
+    <l.players>PLAYERS</l.players>
+    <l.developer>DEVELOPER</l.developer>
+    <l.publisher>PUBLISHER</l.publisher>
+    <l.rating>RATING</l.rating>
+    <l.release>RELEASE</l.release>
+    <l.lastPlayed>LAST PLAYED</l.lastPlayed>
+    <l.hardware>HARDWARE</l.hardware>
+    <l.edition>EDITION</l.edition>
+    <l.loading>SETTING TYPE</l.loading>
+
+    <l.splashKicker>THE FRONT PAGE</l.splashKicker>
+    <l.splashEyebrow>FROM THE PRESS ROOM</l.splashEyebrow>
+    <l.splashDeck>Plates locked. Your library is being set.</l.splashDeck>
+    <l.splashColA>SYSTEMS</l.splashColA>
+    <l.splashColB>TITLES</l.splashColB>
+    <l.splashColC>FAVOURITES</l.splashColC>
+    <l.splashBodyA>Hardware filed by maker and year.</l.splashBodyA>
+    <l.splashBodyB>The catalogue, indexed and cross referenced.</l.splashBodyB>
+    <l.splashBodyC>Cuttings kept aside, close at hand.</l.splashBodyC>
+  </variables>
+</theme>

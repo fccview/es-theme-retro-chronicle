@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+  <formatVersion>7</formatVersion>
+
+  <variables>
+    <f.head>IBMPlexSansCondensed-Bold.ttf</f.head>
+    <f.headSemi>IBMPlexSansCondensed-SemiBold.ttf</f.headSemi>
+    <f.headMed>IBMPlexSansCondensed-Medium.ttf</f.headMed>
+    <f.headReg>IBMPlexSansCondensed-Regular.ttf</f.headReg>
+
+    <f.sans>IBMPlexSans-Regular.ttf</f.sans>
+    <f.sansMed>IBMPlexSans-Medium.ttf</f.sansMed>
+    <f.sansSemi>IBMPlexSans-SemiBold.ttf</f.sansSemi>
+    <f.sansBold>IBMPlexSans-Bold.ttf</f.sansBold>
+
+    <f.mono>IBMPlexMono-Regular.ttf</f.mono>
+    <f.monoMed>IBMPlexMono-Medium.ttf</f.monoMed>
+    <f.monoSemi>IBMPlexMono-SemiBold.ttf</f.monoSemi>
+
+    <f.display>SourceSerif4Display-Black.ttf</f.display>
+    <f.displayBold>SourceSerif4Display-Bold.ttf</f.displayBold>
+
+    <f.serif>IBMPlexSerif-Regular.ttf</f.serif>
+    <f.serifIt>IBMPlexSerif-Italic.ttf</f.serifIt>
+  </variables>
+</theme>

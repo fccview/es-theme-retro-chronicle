@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+  <formatVersion>7</formatVersion>
+
+  <view name="all">
+    <sound name="systembrowse" path="./../../music/page-turn.wav" />
+
+    <sound name="quicksysselect" path="./../../music/page-turn.wav" />
+
+    <sound name="launch" path="./../../music/page-turn.wav" />
+
+    <sound name="select" path="./../../music/switch-click.wav" />
+
+    <sound name="back" path="./../../music/switch-click.wav" />
+
+    <sound name="scroll" path="./../../music/switch-click.wav" />
+
+    <sound name="favorite" path="./../../music/switch-click.wav" />
+  </view>
+</theme>

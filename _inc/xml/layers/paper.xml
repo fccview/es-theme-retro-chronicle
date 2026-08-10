@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+  <formatVersion>7</formatVersion>
+
+  <view name="system,basic,detailed,index,grid">
+    <image
+      name="bs.paper"
+      extra="true"
+      zIndex="0"
+      path="./../../parts/white.png"
+      pos="0 0"
+      origin="0 0"
+      size="1 1"
+      color="${c.paper}"
+    />
+
+    <image
+      name="bs.fibre"
+      extra="true"
+      zIndex="2"
+      path="./../../parts/paper-fibre.png"
+      tile="true"
+      pos="0 0"
+      origin="0 0"
+      size="1 1"
+      color="${c.ink}"
+      opacity="${o.fibre}"
+    />
+
+    <image
+      name="bs.ruleTop"
+      extra="true"
+      zIndex="60"
+      path="./../../parts/white.png"
+      origin="0 0"
+      pos="${g.mx} ${y.ruleTop}"
+      size="${g.w} ${v.heavy}"
+      color="${c.rule}"
+    />
+
+    <image
+      name="bs.ruleBase"
+      extra="true"
+      zIndex="60"
+      path="./../../parts/white.png"
+      origin="0 0"
+      pos="${g.mx} ${y.ruleBase}"
+      size="${g.w} ${v.hair}"
+      color="${c.rule}"
+    />
+
+    <image
+      name="bs.markLeft,bs.markRight"
+      extra="true"
+      zIndex="60"
+      path="./../../parts/registration.png"
+      maxSize="0.016 0.028"
+      color="${c.accent}"
+      opacity="0.85"
+    />
+
+    <image name="bs.markLeft" extra="true" origin="0 0.5" pos="${g.mx} ${y.folio}" />
+
+    <image name="bs.markRight" extra="true" origin="1 0.5" pos="${g.mr} ${y.folio}" />
+  </view>
+
+  <view name="basic,detailed,index,grid">
+    <text
+      name="bs.masthead"
+      extra="true"
+      zIndex="60"
+      fontPath="./../../fonts/${f.head}"
+      fontSize="${t.folio}"
+      color="${c.ink}"
+      forceUppercase="true"
+      alignment="left"
+      verticalAlignment="center"
+      origin="0 0.5"
+      pos="${g.mx} ${y.folio}"
+      size="${g.w} 0.030"
+      text="${l.masthead}"
+      offsetX="0.024"
+    />
+  </view>
+</theme>

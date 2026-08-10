@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+  <formatVersion>7</formatVersion>
+
+  <view name="system,basic,detailed,index,grid">
+    <helpsystem
+      name="help"
+      origin="0 0.5"
+      pos="${g.mx} ${y.help}"
+      fontPath="./../../fonts/${f.monoMed}"
+      fontSize="${t.help}"
+      textColor="${c.ink}"
+      iconColor="${c.ink}"
+    />
+  </view>
+
+  <view name="screen">
+    <text
+      name="clock"
+      origin="1 0.5"
+      pos="${g.mr} ${y.folio}"
+      size="0.24 0.030"
+      offsetX="-0.026"
+      alignment="right"
+      verticalAlignment="center"
+      fontPath="./../../fonts/${f.monoMed}"
+      fontSize="${t.clock}"
+      color="${c.ink}"
+      zIndex="80"
+    />
+
+    <batteryIndicator name="batteryIndicator" visible="false" />
+
+    <controllerActivity
+      name="controllerActivity"
+      pos="${g.ctrlX} ${y.ctrl}"
+      size="${v.ctrlW} ${v.ctrlH}"
+      horizontalAlignment="right"
+      itemSpacing="0.010"
+      imagePath="./../../parts/controller/gamepad.svg"
+      gunPath="./../../parts/controller/gun.svg"
+      wheelPath="./../../parts/controller/wheel.svg"
+      color="${c.muted}"
+      activityColor="${c.ctrlActive}"
+      hotkeyColor="${c.accent}"
+    />
+
+    <networkIcon name="networkIcon" color="${c.muted}" maxSize="0.018 0.026" />
+  </view>
+</theme>

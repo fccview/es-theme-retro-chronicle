@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+  <formatVersion>7</formatVersion>
+
+  <view name="basic">
+    <textlist
+      name="gamelist"
+      pos="${g.mx} ${y.body}"
+      size="${g.w} ${y.listH}"
+      fontPath="./../../fonts/${f.head}"
+      forceUppercase="true"
+    />
+
+    <text name="bs.indexLabel" extra="true" size="${g.w} 0.030" />
+
+    <image name="bs.ruleIndex" extra="true" size="${g.w} ${v.rule}" />
+
+    <image name="bs.ruleIndexFoot" extra="true" size="${g.w} ${v.hair}" />
+
+    <image
+      name="logo"
+      zIndex="70"
+      origin="1 0"
+      pos="${g.mr} ${y.head}"
+      maxSize="0.30 0.070"
+      linearSmooth="true"
+    >
+      <path>./../../systems/logos/${system.theme}.png</path>
+      <path ifSubset="logostyle:colour">./../../systems/logos_color/${system.theme}.png</path>
+      <default>./../../systems/logos_color/${system.theme}.png</default>
+      <color>${c.ink}</color>
+      <color ifSubset="logostyle:colour">FFFFFF</color>
+    </image>
+  </view>
+</theme>

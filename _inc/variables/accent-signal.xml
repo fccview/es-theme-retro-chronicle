@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+  <formatVersion>7</formatVersion>
+
+  <variables>
+    <c.accent>0F9B58</c.accent>
+    <c.onAccent>F7F4EE</c.onAccent>
+  </variables>
+</theme>

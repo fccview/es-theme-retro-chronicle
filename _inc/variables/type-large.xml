@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+  <formatVersion>7</formatVersion>
+
+  <variables>
+    <t.masthead>0.064</t.masthead>
+    <t.kicker>0.0322</t.kicker>
+    <t.folio>0.0218</t.folio>
+    <t.label>0.0213</t.label>
+    <t.list>0.0345</t.list>
+    <t.body>0.0299</t.body>
+    <t.meta>0.0276</t.meta>
+    <t.stat>0.0506</t.stat>
+    <t.statDisplay>0.046</t.statDisplay>
+    <t.nameDisplay>0.06</t.nameDisplay>
+    <t.grid>0.0253</t.grid>
+    <t.help>0.023</t.help>
+    <t.clock>0.0242</t.clock>
+
+    <t.lines>11</t.lines>
+  </variables>
+</theme>

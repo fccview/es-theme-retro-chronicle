@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+  <formatVersion>7</formatVersion>
+
+  <variables>
+    <c.paper>121110</c.paper>
+    <c.ink>EFEBE3</c.ink>
+    <c.rule>EFEBE3</c.rule>
+    <c.muted>A79F93</c.muted>
+    <c.faint>3A3733</c.faint>
+    <c.reverse>121110</c.reverse>
+    <c.accent>EFEBE3</c.accent>
+    <c.onAccent>121110</c.onAccent>
+    <c.plate>EFEBE3</c.plate>
+    <c.ctrlActive>EFEBE3</c.ctrlActive>
+
+    <o.fibre>0.30</o.fibre>
+    <o.halftone>0.22</o.halftone>
+    <o.logo>1</o.logo>
+  </variables>
+</theme>

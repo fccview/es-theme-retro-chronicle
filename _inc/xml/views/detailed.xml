@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+  <formatVersion>7</formatVersion>
+
+  <view name="basic,detailed,index">
+    <text
+      name="bs.indexLabel"
+      extra="true"
+      zIndex="70"
+      fontPath="./../../fonts/${f.monoSemi}"
+      fontSize="${t.label}"
+      color="${c.muted}"
+      forceUppercase="true"
+      alignment="left"
+      verticalAlignment="bottom"
+      origin="0 1"
+      pos="${g.aX} ${y.ruleHead}"
+      size="${g.aW} 0.030"
+      text="${l.index}"
+    />
+
+    <image
+      name="bs.ruleIndex"
+      extra="true"
+      zIndex="60"
+      path="./../../parts/white.png"
+      origin="0 0"
+      pos="${g.aX} ${y.ruleHead}"
+      size="${g.aW} ${v.rule}"
+      color="${c.rule}"
+    />
+
+    <image
+      name="bs.ruleIndexFoot"
+      extra="true"
+      zIndex="60"
+      path="./../../parts/white.png"
+      origin="0 0"
+      pos="${g.aX} ${y.ruleFoot}"
+      size="${g.aW} ${v.hair}"
+      color="${c.rule}"
+      opacity="0.5"
+    />
+  </view>
+
+  <view name="detailed">
+    <image
+      name="bs.ruleTitle"
+      extra="true"
+      zIndex="60"
+      path="./../../parts/white.png"
+      origin="0 0"
+      pos="${g.bX} ${y.ruleHead}"
+      size="${g.bW} ${v.rule}"
+      color="${c.rule}"
+    />
+
+    <image
+      name="bs.ruleByline"
+      extra="true"
+      zIndex="60"
+      path="./../../parts/white.png"
+      origin="0 0"
+      pos="${g.bX} ${y.ruleByline}"
+      size="${g.bW} ${v.hair}"
+      color="${c.rule}"
+      opacity="0.6"
+    />
+
+    <image
+      name="bs.colRule"
+      extra="true"
+      zIndex="58"
+      path="./../../parts/white.png"
+      origin="1 0"
+      pos="${g.bX} ${y.body}"
+      size="${v.hairV} ${y.colH}"
+      color="${c.rule}"
+      opacity="0.40"
+      offsetX="-0.006"
+    />
+
+    <image
+      name="bs.gutterRule"
+      extra="true"
+      zIndex="58"
+      path="./../../parts/white.png"
+      origin="0.5 0"
+      pos="${g.txtX} ${y.art}"
+      size="${v.hairV} ${y.descH}"
+      color="${c.rule}"
+      opacity="0.40"
+      offsetX="-0.006"
+    />
+
+    <image
+      name="bs.ruleFoot"
+      extra="true"
+      zIndex="60"
+      path="./../../parts/white.png"
+      origin="0 0"
+      pos="${g.bX} ${y.ruleFoot}"
+      size="${g.bW} ${v.hair}"
+      color="${c.rule}"
+    />
+
+    <image
+      name="bs.capRule"
+      extra="true"
+      zIndex="66"
+      path="./../../parts/white.png"
+      origin="0 0"
+      pos="${g.artX} ${y.capRule}"
+      size="${g.artW} ${v.hair}"
+      color="${c.rule}"
+      opacity="0.55"
+    />
+
+    <text
+      name="bs.caption"
+      extra="true"
+      zIndex="70"
+      fontPath="./../../fonts/${f.mono}"
+      fontSize="${t.label}"
+      color="${c.muted}"
+      forceUppercase="true"
+      alignment="left"
+      verticalAlignment="center"
+      multiLine="false"
+      origin="0 0.5"
+      pos="${g.artX} ${y.caption}"
+      size="${g.artW} 0.028"
+      text="${system.fullName}"
+    />
+
+    <image
+      name="bs.factRule0,bs.factRule1,bs.factRule2,bs.factRule3"
+      extra="true"
+      zIndex="60"
+      path="./../../parts/white.png"
+      origin="0 0"
+      size="${g.artW} ${v.hair}"
+      color="${c.rule}"
+      opacity="0.35"
+    />
+
+    <image name="bs.factRule0" extra="true" pos="${g.artX} ${y.f0}" />
+    <image name="bs.factRule1" extra="true" pos="${g.artX} ${y.f1}" />
+    <image name="bs.factRule2" extra="true" pos="${g.artX} ${y.f2}" />
+    <image name="bs.factRule3" extra="true" pos="${g.artX} ${y.f3}" opacity="0.55" />
+
+    <text
+      name="bs.lblGenre,bs.lblPlayers,bs.lblRating"
+      extra="true"
+      zIndex="70"
+      fontPath="./../../fonts/${f.monoMed}"
+      fontSize="${t.label}"
+      color="${c.muted}"
+      forceUppercase="true"
+      alignment="left"
+      verticalAlignment="center"
+      origin="0 0.5"
+      size="${g.artW} ${y.rowH}"
+    />
+
+    <text name="bs.lblGenre" extra="true" pos="${g.artX} ${y.fr1}" text="${l.genre}" />
+    <text name="bs.lblPlayers" extra="true" pos="${g.artX} ${y.fr2}" text="${l.players}" />
+    <text name="bs.lblRating" extra="true" pos="${g.artX} ${y.fr3}" text="${l.rating}" />
+
+    <text name="md_genre" pos="${g.artR} ${y.fr1}" />
+    <text name="md_players" pos="${g.artR} ${y.fr2}" />
+
+    <rating name="md_rating" pos="${g.artR} ${y.fr3}" />
+  </view>
+</theme>

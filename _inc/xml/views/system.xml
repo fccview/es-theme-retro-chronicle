@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+  <formatVersion>7</formatVersion>
+
+  <view name="system">
+    <text name="systemInfo" visible="false" opacity="0" zIndex="0" />
+
+    <image name="logo" zIndex="120" linearSmooth="true">
+      <path>./../../systems/logos/${system.theme}.png</path>
+      <path ifSubset="logostyle:colour">./../../systems/logos_color/${system.theme}.png</path>
+      <default>./../../systems/logos_color/${system.theme}.png</default>
+      <color>${c.ink}</color>
+      <color ifSubset="logostyle:colour">FFFFFF</color>
+    </image>
+
+    <text
+      name="logoText"
+      fontPath="./../../fonts/${f.head}"
+      fontSize="0.044"
+      color="${c.ink}"
+      forceUppercase="true"
+      zIndex="120"
+    />
+
+    <carousel
+      name="systemcarousel"
+      type="horizontal"
+      zIndex="110"
+      origin="0.5 0.5"
+      pos="0.5 ${y.band}"
+      size="1 ${y.bandH}"
+      color="00000000"
+      logoSize="${v.logoSize}"
+      logoScale="1.32"
+      logoAlignment="center"
+      maxLogoCount="${v.maxLogos}"
+      minLogoOpacity="0.20"
+      transitionSpeed="520"
+      systemInfoDelay="80"
+      defaultTransition="slide"
+    />
+
+    <text
+      name="bs.nameplate"
+      extra="true"
+      zIndex="70"
+      fontPath="./../../fonts/${f.display}"
+      fontSize="${t.masthead}"
+      color="${c.ink}"
+      forceUppercase="true"
+      alignment="center"
+      verticalAlignment="center"
+      multiLine="false"
+      origin="0.5 0.5"
+      pos="0.5 ${y.masthead}"
+      size="${g.w} 0.070"
+      text="${l.masthead}"
+    />
+
+    <image
+      name="bs.npStarL,bs.npStarR"
+      extra="true"
+      zIndex="70"
+      path="./../../parts/registration.png"
+      maxSize="0.014 0.024"
+      color="${c.accent}"
+      opacity="0.9"
+    />
+
+    <image name="bs.npStarL" extra="true" origin="0 0.5" pos="${g.mx} ${y.masthead}" />
+    <image name="bs.npStarR" extra="true" origin="1 0.5" pos="${g.mr} ${y.masthead}" />
+
+    <image
+      name="bs.npRuleB"
+      extra="true"
+      zIndex="60"
+      path="./../../parts/white.png"
+      origin="0 0"
+      pos="${g.mx} ${y.mastRuleB}"
+      size="${g.w} ${v.hair}"
+      color="${c.rule}"
+    />
+
+    <text
+      name="bs.dateLeft,bs.dateMid,bs.dateRight"
+      extra="true"
+      zIndex="70"
+      fontPath="./../../fonts/${f.monoMed}"
+      fontSize="${t.folio}"
+      color="${c.muted}"
+      forceUppercase="true"
+      verticalAlignment="center"
+      size="${g.tW} 0.030"
+    />
+
+    <text
+      name="bs.dateLeft"
+      extra="true"
+      alignment="left"
+      origin="0 0.5"
+      pos="${g.mx} ${y.dateline}"
+      text="${l.lateEdition}"
+    />
+
+    <text
+      name="bs.dateMid"
+      extra="true"
+      alignment="center"
+      origin="0.5 0.5"
+      pos="0.5 ${y.dateline}"
+      text="${l.sectionSystems}"
+    />
+
+    <text
+      name="bs.dateRight"
+      extra="true"
+      alignment="right"
+      origin="1 0.5"
+      pos="${g.mr} ${y.dateline}"
+      color="${c.accent}"
+      text="${system.theme}"
+    />
+
+    <image
+      name="bs.npRuleC"
+      extra="true"
+      zIndex="60"
+      path="./../../parts/white.png"
+      origin="0 0"
+      pos="${g.mx} ${y.mastRuleC}"
+      size="${g.w} ${v.heavy}"
+      color="${c.rule}"
+    />
+
+    <text
+      name="bs.eyebrow"
+      extra="true"
+      zIndex="70"
+      fontPath="./../../fonts/${f.monoSemi}"
+      fontSize="${t.label}"
+      color="${c.accent}"
+      forceUppercase="true"
+      alignment="left"
+      verticalAlignment="center"
+      multiLine="false"
+      origin="0 0.5"
+      pos="${g.mx} ${y.sysEyebrow}"
+      size="${g.w} 0.030"
+      text="${system.manufacturer}"
+    >
+      <storyboard event="activate">
+        <animation property="opacity" from="0" to="1" duration="260" mode="easeOut" />
+      </storyboard>
+    </text>
+
+    <text
+      name="bs.headline"
+      extra="true"
+      zIndex="70"
+      fontPath="./../../fonts/${f.display}"
+      fontSize="${t.fitHeadline}"
+      color="${c.ink}"
+      alignment="left"
+      verticalAlignment="top"
+      multiLine="false"
+      origin="0 0"
+      pos="${g.mx} ${y.sysHead}"
+      size="${g.w} ${y.sysHeadH}"
+      text="${system.fullName}"
+    >
+      <storyboard event="activate">
+        <animation property="opacity" from="0" to="1" duration="260" mode="easeOut" />
+        <animation property="offsetX" from="-0.018" to="0" duration="320" mode="easeOut" />
+      </storyboard>
+    </text>
+
+    <text
+      name="bs.deck"
+      extra="true"
+      zIndex="70"
+      fontPath="./../../fonts/${f.serifIt}"
+      fontSize="${t.kicker}"
+      color="${c.muted}"
+      alignment="left"
+      verticalAlignment="center"
+      multiLine="false"
+      origin="0 0.5"
+      pos="${g.mx} ${y.sysDeck}"
+      size="${g.bylineW} 0.050"
+      text="${l.firstPublished} ${system.releaseYearOrNull}"
+    >
+      <storyboard event="activate">
+        <animation property="opacity" from="0" to="1" duration="300" begin="90" mode="easeOut" />
+        <animation
+          property="offsetX"
+          from="-0.012"
+          to="0"
+          duration="340"
+          begin="90"
+          mode="easeOut"
+        />
+      </storyboard>
+    </text>
+
+    <text
+      name="bs.deckCode"
+      extra="true"
+      zIndex="70"
+      fontPath="./../../fonts/${f.monoSemi}"
+      fontSize="${t.label}"
+      color="${c.muted}"
+      forceUppercase="true"
+      alignment="right"
+      verticalAlignment="center"
+      multiLine="false"
+      origin="1 0.5"
+      pos="${g.mr} ${y.sysDeck}"
+      size="0.26 0.050"
+      text="${l.sysCode} ${system.name}"
+    />
+
+    <image
+      name="bs.ruleMid"
+      extra="true"
+      zIndex="60"
+      path="./../../parts/white.png"
+      origin="0 0"
+      pos="${g.mx} ${y.ruleMid}"
+      size="${g.w} ${v.rule}"
+      color="${c.rule}"
+    />
+
+    <image
+      name="bs.ruleBand"
+      extra="true"
+      zIndex="60"
+      path="./../../parts/white.png"
+      origin="0 0"
+      pos="${g.mx} ${y.ruleBand}"
+      size="${g.w} ${v.hair}"
+      color="${c.rule}"
+    />
+
+    <image
+      name="bs.slotMark"
+      extra="true"
+      zIndex="62"
+      path="./../../parts/white.png"
+      origin="0.5 0"
+      pos="0.5 ${y.ruleBand}"
+      size="${w.slotMark} ${v.heavy}"
+      color="${c.accent}"
+    >
+      <storyboard event="activate">
+        <animation property="opacity" from="0" to="1" duration="220" mode="easeOut" />
+      </storyboard>
+    </image>
+
+    <image
+      name="bs.colRuleHw"
+      extra="true"
+      zIndex="60"
+      path="./../../parts/white.png"
+      origin="0 0"
+      pos="${g.vHw} ${y.ruleBand}"
+      size="${v.hairV} ${y.colHwH}"
+      color="${c.rule}"
+      opacity="0.55"
+    />
+
+    <image
+      name="bs.colRuleS1,bs.colRuleS2"
+      extra="true"
+      zIndex="60"
+      path="./../../parts/white.png"
+      origin="0 0"
+      size="${v.hairV} ${y.statColH}"
+      color="${c.rule}"
+      opacity="0.40"
+    />
+
+    <image name="bs.colRuleS1" extra="true" pos="${g.h2} ${y.hwStatRule}" offsetX="-0.008" />
+    <image name="bs.colRuleS2" extra="true" pos="${g.h3} ${y.hwStatRule}" offsetX="-0.008" />
+
+    <text
+      name="bs.hwLabel"
+      extra="true"
+      zIndex="70"
+      fontPath="./../../fonts/${f.monoMed}"
+      fontSize="${t.label}"
+      color="${c.muted}"
+      forceUppercase="true"
+      alignment="left"
+      verticalAlignment="center"
+      origin="0 0.5"
+      pos="${g.mx} ${y.hwLabel}"
+      size="${g.hwW} 0.030"
+      text="${l.hardware}"
+    />
+
+    <text
+      name="bs.hwName"
+      extra="true"
+      zIndex="70"
+      fontPath="./../../fonts/${f.display}"
+      fontSize="${t.fitTitle}"
+      color="${c.ink}"
+      forceUppercase="true"
+      alignment="left"
+      verticalAlignment="center"
+      multiLine="false"
+      origin="0 0.5"
+      pos="${g.mx} ${y.hwName}"
+      size="${g.hwW} 0.064"
+      text="${system.name}"
+    >
+      <storyboard event="activate">
+        <animation property="opacity" from="0" to="1" duration="300" begin="120" mode="easeOut" />
+      </storyboard>
+    </text>
+
+    <text
+      name="bs.hwSub"
+      extra="true"
+      zIndex="70"
+      fontPath="./../../fonts/${f.displayBold}"
+      fontSize="${t.meta}"
+      color="${c.muted}"
+      alignment="left"
+      verticalAlignment="center"
+      multiLine="false"
+      origin="0 0.5"
+      pos="${g.mx} ${y.hwSub}"
+      size="${g.hwW} 0.044"
+      text="${system.manufacturer}"
+    />
+
+    <image
+      name="bs.ruleStats"
+      extra="true"
+      zIndex="60"
+      path="./../../parts/white.png"
+      origin="0 0"
+      pos="${g.mx} ${y.hwStatRule}"
+      size="${g.hwW} ${v.hair}"
+      color="${c.rule}"
+      opacity="0.40"
+    />
+
+    <text
+      name="bs.lblTitles,bs.lblPlayed,bs.lblFavourites"
+      extra="true"
+      zIndex="70"
+      fontPath="./../../fonts/${f.monoMed}"
+      fontSize="${t.label}"
+      color="${c.muted}"
+      forceUppercase="true"
+      alignment="left"
+      verticalAlignment="center"
+      origin="0 0.5"
+      size="${g.hW} 0.030"
+    />
+
+    <text
+      name="bs.valTitles,bs.valPlayed,bs.valFavourites"
+      extra="true"
+      zIndex="70"
+      fontPath="./../../fonts/${f.head}"
+      fontSize="${t.stat}"
+      color="${c.ink}"
+      alignment="left"
+      verticalAlignment="center"
+      origin="0 0.5"
+      size="${g.hW} 0.060"
+    />
+
+    <text name="bs.lblTitles" extra="true" pos="${g.h1} ${y.hwStatLabel}" text="${l.titles}" />
+    <text name="bs.lblPlayed" extra="true" pos="${g.h2} ${y.hwStatLabel}" text="${l.played}" />
+    <text
+      name="bs.lblFavourites"
+      extra="true"
+      pos="${g.h3} ${y.hwStatLabel}"
+      text="${l.favourites}"
+    />
+
+    <text name="bs.valTitles" extra="true" pos="${g.h1} ${y.hwStatValue}" text="{system:total}" />
+    <text
+      name="bs.valPlayed"
+      extra="true"
+      pos="${g.h2} ${y.hwStatValue}"
+      text="{system:gamesPlayed}"
+    />
+    <text
+      name="bs.valFavourites"
+      extra="true"
+      pos="${g.h3} ${y.hwStatValue}"
+      text="{system:favorites}"
+    />
+
+    <image
+      name="bs.hardware"
+      extra="true"
+      zIndex="70"
+      origin="1 1"
+      pos="${g.mr} ${y.hwPlate}"
+      maxSize="${v.hwImg} ${y.hwPlateH}"
+      linearSmooth="true"
+    >
+      <path>./../../systems/hardware/${system.theme}.png</path>
+      <default>./../../systems/hardware/_default.png</default>
+      <visible ifSubset="hardware:off">false</visible>
+
+      <storyboard event="activate">
+        <animation property="opacity" from="0" to="1" duration="380" begin="120" mode="easeOut" />
+      </storyboard>
+    </image>
+
+    <text name="bs.hwLabel" ifSubset="hardware:off" extra="true" size="${g.w} 0.030" />
+    <text name="bs.hwName" ifSubset="hardware:off" extra="true" size="${g.w} 0.064" />
+    <text name="bs.hwSub" ifSubset="hardware:off" extra="true" size="${g.w} 0.044" />
+
+    <image name="bs.ruleStats" ifSubset="hardware:off" extra="true" size="${g.w} ${v.hair}" />
+    <image name="bs.colRuleHw" ifSubset="hardware:off" extra="true" visible="false" />
+
+    <image name="bs.colRuleS1" ifSubset="hardware:off" extra="true" pos="${g.t2} ${y.hwStatRule}" />
+    <image name="bs.colRuleS2" ifSubset="hardware:off" extra="true" pos="${g.t3} ${y.hwStatRule}" />
+
+    <text
+      name="bs.lblTitles"
+      ifSubset="hardware:off"
+      extra="true"
+      pos="${g.t1} ${y.hwStatLabel}"
+      size="${g.tW} 0.030"
+    />
+    <text
+      name="bs.lblPlayed"
+      ifSubset="hardware:off"
+      extra="true"
+      pos="${g.t2} ${y.hwStatLabel}"
+      size="${g.tW} 0.030"
+    />
+    <text
+      name="bs.lblFavourites"
+      ifSubset="hardware:off"
+      extra="true"
+      pos="${g.t3} ${y.hwStatLabel}"
+      size="${g.tW} 0.030"
+    />
+
+    <text
+      name="bs.valTitles"
+      ifSubset="hardware:off"
+      extra="true"
+      pos="${g.t1} ${y.hwStatValue}"
+      size="${g.tW} 0.060"
+    />
+    <text
+      name="bs.valPlayed"
+      ifSubset="hardware:off"
+      extra="true"
+      pos="${g.t2} ${y.hwStatValue}"
+      size="${g.tW} 0.060"
+    />
+    <text
+      name="bs.valFavourites"
+      ifSubset="hardware:off"
+      extra="true"
+      pos="${g.t3} ${y.hwStatValue}"
+      size="${g.tW} 0.060"
+    />
+
+    <text
+      name="bs.folioPage"
+      extra="true"
+      zIndex="70"
+      fontPath="./../../fonts/${f.monoMed}"
+      fontSize="${t.folio}"
+      color="${c.muted}"
+      forceUppercase="true"
+      alignment="center"
+      verticalAlignment="center"
+      origin="0.5 0.5"
+      pos="0.5 ${y.help}"
+      size="0.30 0.030"
+      text="${l.pageOne}"
+    />
+  </view>
+</theme>

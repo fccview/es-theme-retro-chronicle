@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+  <formatVersion>7</formatVersion>
+
+  <customView name="index" inherits="detailed">
+    <image name="md_image" visible="false" />
+    <video name="md_video" visible="false" />
+    <image name="bs.capRule" extra="true" visible="false" />
+    <text name="bs.caption" extra="true" visible="false" />
+    <image name="bs.factRule2,bs.factRule3" extra="true" visible="false" />
+    <image name="bs.gutterRule" extra="true" visible="false" />
+
+    <textlist
+      name="gamelist"
+      pos="${g.mx} ${y.body}"
+      size="${g.iW} ${y.listH}"
+      fontPath="./../../fonts/${f.sans}"
+    />
+
+    <text name="bs.indexLabel" extra="true" size="${g.iW} 0.030" />
+    <image name="bs.ruleIndex" extra="true" size="${g.iW} ${v.rule}" />
+    <image name="bs.ruleIndexFoot" extra="true" size="${g.iW} ${v.hair}" />
+
+    <image
+      name="bs.colRule"
+      extra="true"
+      pos="${g.iX} ${y.body}"
+      size="${v.hairV} ${y.colH}"
+      offsetX="-0.014"
+    />
+
+    <image name="bs.ruleTitle" extra="true" pos="${g.iX} ${y.ruleHead}" size="${g.iRW} ${v.rule}" />
+
+    <image
+      name="bs.ruleByline"
+      extra="true"
+      pos="${g.iX} ${y.ruleByline}"
+      size="${g.iRW} ${v.hair}"
+    />
+
+    <image name="bs.ruleFoot" extra="true" pos="${g.iX} ${y.ruleFoot}" size="${g.iRW} ${v.hair}" />
+
+    <text name="md_name" pos="${g.iX} ${y.head}" size="${g.iRW} 0.072" fontSize="${t.list}" />
+
+    <text name="md_developer" pos="${g.mr} ${y.byline}" size="${g.iBylineW} 0.040" />
+    <datetime name="md_releasedate" pos="${g.iX} ${y.byline}" />
+
+    <text name="md_description" pos="${g.iX} ${y.art}" size="${g.iRW} ${y.iDescH}" />
+
+    <image name="bs.factRule0" extra="true" pos="${g.iX} ${y.if0}" size="${g.iRW} ${v.hair}" />
+    <image name="bs.factRule1" extra="true" pos="${g.iX} ${y.if1}" size="${g.iRW} ${v.hair}" />
+
+    <text name="bs.lblGenre" extra="true" pos="${g.iX} ${y.ifr1}" size="${g.iRW} ${y.rowH}" />
+    <text name="bs.lblPlayers" extra="true" pos="${g.iX} ${y.ifr2}" size="${g.iRW} ${y.rowH}" />
+    <text name="bs.lblRating" extra="true" visible="false" />
+
+    <text name="md_genre" pos="${g.mr} ${y.ifr1}" size="${g.iFactVW} ${y.rowH}" />
+    <text name="md_players" pos="${g.mr} ${y.ifr2}" size="${g.iFactVW} ${y.rowH}" />
+
+    <rating name="md_rating" visible="false" />
+  </customView>
+</theme>

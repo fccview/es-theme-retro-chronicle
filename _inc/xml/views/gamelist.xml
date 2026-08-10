@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+  <formatVersion>7</formatVersion>
+
+  <view name="basic,detailed,index,grid">
+    <text
+      name="md_lbl_rating,md_lbl_releasedate,md_lbl_developer,md_lbl_publisher,md_lbl_genre,md_lbl_players,md_lbl_lastplayed,md_lbl_playcount"
+      visible="false"
+      opacity="0"
+    />
+
+    <text name="md_publisher,md_lastplayed,md_playcount" visible="false" opacity="0" />
+
+    <image name="md_marquee,md_thumbnail,md_fanart,md_flag" visible="false" opacity="0" />
+
+    <image name="logo" visible="false" opacity="0" />
+
+    <text name="logoText" visible="false" opacity="0" />
+
+    <text
+      name="bs.folioSystem"
+      extra="true"
+      zIndex="60"
+      fontPath="./../../fonts/${f.monoMed}"
+      fontSize="${t.folio}"
+      color="${c.muted}"
+      forceUppercase="true"
+      alignment="center"
+      verticalAlignment="center"
+      origin="0.5 0.5"
+      pos="0.5 ${y.folio}"
+      size="0.50 0.030"
+      text="${system.fullName}"
+    />
+
+    <textlist
+      name="gamelist"
+      zIndex="120"
+      origin="0 0"
+      pos="${g.aX} ${y.body}"
+      size="${g.aW} ${y.listH}"
+      lines="${t.lines}"
+      fontPath="./../../fonts/${f.sansMed}"
+      fontSize="${t.list}"
+      primaryColor="${c.ink}"
+      secondaryColor="${c.muted}"
+      selectedColor="${c.onAccent}"
+      extraTextColor="${c.muted}"
+      extraTextSelectedColor="${c.onAccent}"
+      selectorColor="${c.accent}"
+      selectorColorEnd="${c.accent}"
+      horizontalMargin="0.012"
+      alignment="left"
+    />
+
+    <text
+      name="md_name"
+      zIndex="70"
+      fontPath="./../../fonts/${f.display}"
+      fontSize="${t.nameDisplay}"
+      color="${c.ink}"
+      alignment="left"
+      verticalAlignment="top"
+      multiLine="false"
+      origin="0 0"
+      pos="${g.bX} ${y.head}"
+      size="${g.bW} 0.072"
+    />
+
+    <text
+      name="md_developer"
+      zIndex="70"
+      fontPath="./../../fonts/${f.serifIt}"
+      fontSize="${t.meta}"
+      color="${c.muted}"
+      alignment="right"
+      verticalAlignment="center"
+      multiLine="false"
+      origin="1 0.5"
+      pos="${g.mr} ${y.byline}"
+      size="${g.bylineW} 0.040"
+    />
+
+    <datetime
+      name="md_releasedate"
+      zIndex="70"
+      fontPath="./../../fonts/${f.monoSemi}"
+      fontSize="${t.meta}"
+      color="${c.accent}"
+      alignment="left"
+      origin="0 0.5"
+      pos="${g.bX} ${y.byline}"
+      size="0.100 0.040"
+      format="%Y"
+    />
+
+    <text
+      name="md_description"
+      zIndex="70"
+      fontPath="./../../fonts/${f.serif}"
+      fontSize="${t.body}"
+      color="${c.ink}"
+      alignment="left"
+      verticalAlignment="top"
+      multiLine="true"
+      lineSpacing="1.34"
+      origin="0 0"
+      pos="${g.txtX} ${y.art}"
+      size="${g.txtW} ${y.descH}"
+      autoScroll="vertical"
+      autoScrollDelay="4000"
+      autoScrollSpeed="26"
+    />
+
+    <text
+      name="md_genre,md_players"
+      zIndex="70"
+      fontPath="./../../fonts/${f.headSemi}"
+      fontSize="${t.meta}"
+      color="${c.ink}"
+      forceUppercase="true"
+      alignment="right"
+      verticalAlignment="center"
+      multiLine="false"
+      origin="1 0.5"
+      size="${g.factVW} ${y.rowH}"
+    />
+
+    <rating
+      name="md_rating"
+      zIndex="70"
+      origin="1 0.5"
+      size="0.110 0.024"
+      color="${c.accent}"
+      unfilledColor="${c.faint}"
+    />
+
+    <image
+      name="md_image"
+      zIndex="70"
+      origin="0.5 0"
+      pos="${g.artMid} ${y.art}"
+      maxSize="${g.artW} ${y.artFit}"
+      linearSmooth="true"
+    >
+      <default>./../../parts/notfound.png</default>
+    </image>
+
+    <video
+      name="md_video"
+      zIndex="72"
+      origin="0.5 0"
+      pos="${g.artMid} ${y.art}"
+      maxSize="${g.artW} ${y.artFit}"
+      delay="1"
+      effect="none"
+      linearSmooth="true"
+      showSnapshotDelay="true"
+      showSnapshotNoVideo="true"
+    >
+      <visible ifSubset="preview:image">false</visible>
+      <visible ifSubset="preview:off">false</visible>
+    </video>
+  </view>
+</theme>

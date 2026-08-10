@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+  <formatVersion>7</formatVersion>
+
+  <view name="grid">
+    <textlist name="gamelist" visible="false" />
+
+    <text
+      name="bs.contactLabel"
+      extra="true"
+      zIndex="70"
+      fontPath="./../../fonts/${f.monoSemi}"
+      fontSize="${t.label}"
+      color="${c.muted}"
+      forceUppercase="true"
+      alignment="left"
+      verticalAlignment="bottom"
+      origin="0 1"
+      pos="${g.mx} ${y.ruleHead}"
+      size="${g.w} 0.030"
+      text="${l.titles}"
+    />
+
+    <image
+      name="bs.ruleGridTop"
+      extra="true"
+      zIndex="60"
+      path="./../../parts/white.png"
+      origin="0 0"
+      pos="${g.mx} ${y.ruleHead}"
+      size="${g.w} ${v.rule}"
+      color="${c.rule}"
+    />
+
+    <text
+      name="md_name"
+      zIndex="70"
+      fontPath="./../../fonts/${f.display}"
+      fontSize="${t.nameDisplay}"
+      color="${c.ink}"
+      alignment="left"
+      verticalAlignment="top"
+      multiLine="false"
+      origin="0 0"
+      pos="${g.mx} ${y.head}"
+      size="${g.w} 0.072"
+    />
+
+    <imagegrid
+      name="gamegrid"
+      zIndex="120"
+      origin="0 0"
+      pos="${g.mx} ${y.body}"
+      size="${g.w} ${y.listH}"
+      margin="0.012 0.020"
+      padding="0 0 0 0"
+      autoLayout="${v.gridLayout}"
+      autoLayoutSelectedZoom="1.05"
+      animateSelection="true"
+      centerSelection="false"
+      scrollDirection="vertical"
+      scrollbarAlignment="right"
+      scrollbarColor="${c.accent}"
+      scrollbarSize="0.003"
+      imageSource="thumbnail"
+      gameImage="./../../parts/notfound.png"
+      showVideoAtDelay="1200"
+      linearSmooth="true"
+    />
+
+    <gridtile
+      name="default"
+      size="1 1"
+      padding="8 8"
+      backgroundColor="00000000"
+      backgroundCenterColor="00000000"
+      backgroundEdgeColor="00000000"
+      backgroundCornerSize="9 9"
+      imageColor="FFFFFF66"
+      imageSizeMode="maxSize"
+      selectionMode="image"
+      linearSmooth="true"
+    />
+
+    <gridtile
+      name="selected"
+      size="1 1"
+      padding="8 8"
+      backgroundColor="00000000"
+      backgroundCenterColor="00000000"
+      backgroundEdgeColor="00000000"
+      backgroundCornerSize="9 9"
+      imageColor="FFFFFFFF"
+      imageSizeMode="maxSize"
+      selectionMode="image"
+      linearSmooth="true"
+    />
+
+    <image name="gridtile.image" linearSmooth="true" />
+
+    <text
+      name="gridtile"
+      fontPath="./../../fonts/${f.headMed}"
+      fontSize="${t.grid}"
+      color="${c.muted}"
+      backgroundColor="00000000"
+      forceUppercase="true"
+      alignment="center"
+      verticalAlignment="center"
+      size="1 0.20"
+    />
+
+    <text
+      name="gridtile:selected"
+      fontPath="./../../fonts/${f.headSemi}"
+      color="${c.ink}"
+      backgroundColor="00000000"
+    />
+
+    <rating name="md_rating" origin="1 1" pos="${g.mr} ${y.ruleHead}" />
+
+    <image
+      name="bs.ruleGridFoot"
+      extra="true"
+      zIndex="60"
+      path="./../../parts/white.png"
+      origin="0 0"
+      pos="${g.mx} ${y.ruleFoot}"
+      size="${g.w} ${v.hair}"
+      color="${c.rule}"
+    />
+
+    <text
+      name="bs.lblGenre,bs.lblPlayers,bs.lblDeveloper,bs.lblRelease"
+      extra="true"
+      zIndex="70"
+      fontPath="./../../fonts/${f.monoMed}"
+      fontSize="${t.label}"
+      color="${c.muted}"
+      forceUppercase="true"
+      alignment="left"
+      verticalAlignment="center"
+      origin="0 0.5"
+      size="${g.qW} 0.026"
+    />
+
+    <text name="bs.lblGenre" extra="true" pos="${g.q1} ${y.statLabel}" text="${l.genre}" />
+    <text name="bs.lblPlayers" extra="true" pos="${g.q2} ${y.statLabel}" text="${l.players}" />
+    <text name="bs.lblDeveloper" extra="true" pos="${g.q3} ${y.statLabel}" text="${l.developer}" />
+    <text name="bs.lblRelease" extra="true" pos="${g.q4} ${y.statLabel}" text="${l.release}" />
+
+    <text
+      name="md_genre,md_players,md_developer"
+      fontPath="./../../fonts/${f.headSemi}"
+      color="${c.ink}"
+      alignment="left"
+      verticalAlignment="center"
+      origin="0 0.5"
+      size="${g.qW} 0.034"
+    />
+
+    <text name="md_genre" pos="${g.q1} ${y.statValue}" />
+    <text name="md_players" pos="${g.q2} ${y.statValue}" />
+    <text name="md_developer" pos="${g.q3} ${y.statValue}" />
+
+    <datetime
+      name="md_releasedate"
+      alignment="left"
+      origin="0 0.5"
+      pos="${g.q4} ${y.statValue}"
+      size="${g.qW} 0.034"
+    />
+
+    <text name="md_description" visible="false" />
+    <image name="md_image" visible="false" />
+    <video name="md_video" visible="false" />
+  </view>
+</theme>
