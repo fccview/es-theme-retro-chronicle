@@ -2,6 +2,14 @@
 
 A newspaper looking theme for Batocera EmulationStation, monochrome by default with optional accent colours. Supports both light and dark mode.
 
+## Screenshots
+
+| Home (default)                                    | Home (colour logos)                                    |
+| ------------------------------------------------- | ------------------------------------------------------ |
+| ![Home default](screenshots/home-default.png)     | ![Home colour logos](screenshots/home-color-logos.png) |
+| Game list                                         | Theme config                                           |
+| ![Game list view](screenshots/game-list-view.png) | ![Theme config](screenshots/theme-config.png)          |
+
 ## Install
 
 Copy the `es-theme-retro-chronicle` folder to `/userdata/themes/` on the device, then pick
