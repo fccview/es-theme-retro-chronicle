@@ -10,12 +10,6 @@ A newspaper looking theme for Batocera EmulationStation, monochrome by default w
 | Game list                                         | Theme config                                           |
 | ![Game list view](screenshots/game-list-view.png) | ![Theme config](screenshots/theme-config.png)          |
 
-## Install
-
-Copy the `es-theme-retro-chronicle` folder to `/userdata/themes/` on the device, then pick
-**Retro Chronicle** under _System Settings > Theme_. Theme options appear under _UI Settings >
-Theme Configuration_.
-
 ## GPU Warning
 
 It's a very lightweight theme, however some of the graphic options do use procedural shaders. Set any screen grade with `(static)` in the name to fully disable shaders on the theme.
